@@ -2,6 +2,11 @@
   <swiper
     :slides-per-view="1"
     :space-between="50"
+    :modules="modules"
+    :pagination="{ clickable: true }"
+    :autoplay="{
+      delay: 5000,
+    }"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
   >
@@ -128,19 +133,21 @@
         <img :src="banner" class="w-full h-screen" alt="" />
       </div>
     </swiper-slide>
-    ...
+  
   </swiper>
 </template>
 <script setup lang="ts">
-// Import Swiper Vue.js components
+
 import aboutimg from "../images/linemed-about.jpg";
 import banner from "../images/linemed-banner.jpg";
 import banner2 from "../images/linemed-banner2.jpeg";
+import { Navigation, Pagination,Autoplay, Scrollbar, A11y } from 'swiper';
+// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
 import "swiper/css/bundle";
-
+const modules = [Navigation, Pagination, Scrollbar, A11y,Autoplay]
 const onSwiper = (swiper) => {
   console.log(swiper);
 };
