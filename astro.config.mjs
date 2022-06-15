@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [react(), vue(), tailwind(), partytown()],
   vite: {
     ssr: {
-      noExternal: ['swiper'],
+      noExternal: ['swiper','heroicons-astro'],
     }
   }
 });

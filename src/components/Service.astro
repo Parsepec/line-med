@@ -1,30 +1,56 @@
 ---
-  import Icon from "heroicons-astro/Heroicon.astro";
+import Icon from "heroicons-astro/Heroicon.astro";
 ---
-<div class="flex flex-col w-11/12 md:w-9/12 lg:w-8/12 mx-auto justify-center">
-    <h1 class="text-2xl text-center">Services</h1>
+
+<div class="flex flex-col w-11/12 md:w-10/12 mx-auto justify-center text-gray-700">
+    <h1 class="text-3xl text-center  font-header">Services</h1>
     <h3 class="text-lg text-center">line Med</h3>
     <div class="flex flex-col md:flex-row justify-center">
-        <div class="flex flex-col py-4 px-3 border border-gray-200 ">
-            <Icon iconCode="desktop-computer" iconStyle="outline" customClasses="h-10 w-10 text-teal-700 font-thin" />
-            <h1 class="text-2xl mb-3 font-header">Telepsychiatry</h1>
-            <p class="text-sm mb-4">Telepsychiatry is a subspecialty of telemedicine, which allows mental health care to be provided…</p>
-            <a href="" class="bg-teal-700 hover:bg-white text-white hover:text-teal-700 py-1 px-2 text-sm ">Read more</a>
+        <div class="flex flex-col py-8 px-4 border border-gray-200 group hover:bg-teal-700">
+            <Icon iconCode="desktop-computer" iconStyle="outline"
+                customClasses="h-14 w-14 mb-4 stroke-teal-700 group-hover:stroke-white stroke-1" />
+            <h1 class="text-xl mb-3 font-header group-hover:text-white">Telepsychiatry</h1>
+            <p class="text-sm  mb-4 font-open group-hover:text-white">Telepsychiatry is a subspecialty of telemedicine,
+                which allows mental health care to be provided…</p>
+            <a href=""
+                class="bg-teal-700 w-1/2 hover:bg-white text-white hover:text-teal-700 group-hover:bg-white group-hover:text-teal-700 py-1 px-2 text-sm ">Read
+                more</a>
         </div>
-        <div class="flex flex-col py-4 px-3 ">
-            <h1>Telepsychiatry</h1>
-            <p>Telepsychiatry is a subspecialty of telemedicine, which allows mental health care to be provided…</p>
-            <a href="" class="bg-teal-700 hover:bg-white text-white hover:text-teal-700 py-1">Read more</a>
+        <div class="flex flex-col py-8 px-4 border border-gray-200 group hover:bg-teal-700">
+            <Icon iconCode="user" iconStyle="outline"
+                customClasses="h-14 w-14 mb-4 stroke-teal-700 group-hover:stroke-white stroke-1" />
+            <h1 class="text-xl mb-3 font-header group-hover:text-white">Behavioral Health Services</h1>
+            <p class="text-sm  mb-4 font-open group-hover:text-white">At Ziks health Services, we will evaluate your individual needs, providing medication…</p>
+            <a href=""
+                class="bg-teal-700 w-1/2 hover:bg-white text-white hover:text-teal-700 group-hover:bg-white group-hover:text-teal-700 py-1 px-2 text-sm ">Read
+                more</a>
         </div>
-        <div class="flex flex-col py-4 px-3 ">
-            <h1>Telepsychiatry</h1>
-            <p>Telepsychiatry is a subspecialty of telemedicine, which allows mental health care to be provided…</p>
-            <a href="" class="bg-teal-700 hover:bg-white text-white hover:text-teal-700 py-1">Read more</a>
+        <div class="flex flex-col py-8 px-4 border border-gray-200 group hover:bg-teal-700">
+            <Icon iconCode="desktop-computer" iconStyle="outline"
+                customClasses="h-14 w-14 mb-4 stroke-teal-700 group-hover:stroke-white stroke-1" />
+            <h1 class="text-xl mb-3 font-header group-hover:text-white">Supported Living Residential Services</h1>
+            <p class="text-sm  mb-4 font-open group-hover:text-white">Ziks Health Services focuses also on delivering counseling services to those with mental illness…</p>
+            <a href=""
+                class="bg-teal-700 w-1/2 hover:bg-white text-white hover:text-teal-700 group-hover:bg-white group-hover:text-teal-700 py-1 px-2 text-sm ">Read
+                more</a>
         </div>
-        <div class="flex flex-col py-4 px-3 ">
-            <h1>Telepsychiatry</h1>
-            <p>Telepsychiatry is a subspecialty of telemedicine, which allows mental health care to be provided…</p>
-            <button href="" class="bg-teal-700 hover:bg-white text-white hover:text-teal-700 py-1">Read more</button>
+        <div class="flex flex-col py-8 px-4 border border-gray-200 group hover:bg-teal-700">
+            <Icon iconCode="desktop-computer" iconStyle="outline"
+                customClasses="h-14 w-14 mb-4 stroke-teal-700 group-hover:stroke-white stroke-1" />
+            <h1 class="text-xl mb-3 font-header group-hover:text-white">Integrative Treatment</h1>
+            <p class="text-sm  mb-4 font-open group-hover:text-white">Mental health is essential to improving overall health outcomes across the lifespan…</p>
+            <a href=""
+                class="bg-teal-700 w-1/2 hover:bg-white text-white hover:text-teal-700 group-hover:bg-white group-hover:text-teal-700 py-1 px-2 text-sm ">Read
+                more</a>
+        </div>
+        <div class="flex flex-col py-8 px-4 border border-gray-200 group hover:bg-teal-700">
+            <Icon iconCode="desktop-computer" iconStyle="outline"
+                customClasses="h-14 w-14 mb-4 stroke-teal-700 group-hover:stroke-white stroke-1" />
+            <h1 class="text-xl mb-3 font-header group-hover:text-white">Cognitive Evaluations</h1>
+            <p class="text-sm  mb-4 font-open group-hover:text-white">Ziks Health Services offers comprehensive cognitive assessments, powered by Cambridge Brain Sciences….</p>
+            <a href=""
+                class="bg-teal-700 w-1/2 hover:bg-white text-white hover:text-teal-700 group-hover:bg-white group-hover:text-teal-700 py-1 px-2 text-sm ">Read
+                more</a>
         </div>
     </div>
 </div>
