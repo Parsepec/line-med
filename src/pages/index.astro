@@ -3,12 +3,14 @@
 	import Card from '../components/Card.astro';
 	import Counter from '../components/Slide.vue';
 	import Swipe from '../components/Swipe.vue';
+	import Services from '../components/Service.astro'
 
 ---
 
 <Layout title="Welcome to Astro.">
 	<Counter client:load/>
 	<Swipe client:load/>
+	<Services />
 	<main>
 
 		<h1>Welcome to <span class="text-green-700">Astro</span></h1>
