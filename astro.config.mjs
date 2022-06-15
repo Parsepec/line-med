@@ -7,5 +7,10 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), vue(), tailwind(), partytown()]
+  integrations: [react(), vue(), tailwind(), partytown()],
+  vite: {
+    ssr: {
+      noExternal: ['swiper'],
+    }
+  }
 });
