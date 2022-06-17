@@ -1,11 +1,11 @@
 ---
-  import Icon from "heroicons-astro/Heroicon.astro";
-  import Footer from '../components/Footer.astro';
-  export interface Props {
-    title: string;
-  }
+import Icon from "heroicons-astro/Heroicon.astro";
+import Footer from '../components/Footer.astro';
+export interface Props {
+  title: string;
+}
 
-  const { title } = Astro.props as Props
+const { title } = Astro.props as Props
 ---
 
 <!DOCTYPE html>
@@ -60,7 +60,21 @@
       <ul class="uk-navbar-nav">
         <li class="uk-active"><a href="">Home</a></li>
         <li class="uk-parent"><a href="">About</a></li>
-        <li class="uk-parent"><a href="">Services</a></li>
+        <li class="uk-parent"><a href="">Services</a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li class=""><a href="#">Telepsychiatry</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#">Behavioral Health Services</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#">Supported Living Residential Services</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#">Integrative Treatment</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="">Cognitive Evaluations</a></li>
+            </ul>
+          </div>
+        </li>
         <li class="uk-parent"><a href="">Contact Us</a></li>
 
         <li><a href=""></a></li>
@@ -68,12 +82,12 @@
     </div>
   </nav>
   <slot />
-  <Footer/>
+  <Footer />
 </body>
 
 </html>
 <style>
   svg path {
-  stroke-width: 1;
-}
+    stroke-width: 1;
+  }
 </style>
